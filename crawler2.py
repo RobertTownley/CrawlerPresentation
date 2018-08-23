@@ -14,13 +14,13 @@ from utils import save_image_from_internet
 
 
 def wait():
-    time.sleep(1)
+    time.sleep(2)
 
 
 def get_browser():
     options = webdriver.chrome.options.Options()
     options.add_argument("--start-maximized")
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     browser = webdriver.Chrome(
         chrome_options=options,
         executable_path='/usr/local/bin/chromedriver',

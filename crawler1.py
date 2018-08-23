@@ -34,7 +34,6 @@ for headline in set(headlines):
 
     # If that headline has the word "cats" in it...
     if "Republican" in headline.text:
-        # Send an email to Robert
-        content = "NJ wrote a new story about cats. The headline was: " + headline.text
+        content = "NJ made a new article about Republicans: " + headline.text
         recipient = 'Me@RobertTownley.com'
         send_email(to=recipient, subject='NJ Update!!!', body=content)
